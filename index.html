@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RCB Rivals Game</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RCB vs Punjab</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="game-container">
-    <img id="matchImage" src="rcb_vs_mi.png" alt="Match Image" />
-    <button id="nextBtn">Next</button>
-    <h1 id="winText" style="display: none;">You Are WON!</h1>
+  <div class="card">
+    <img src="rcb-vs-punjab.png" alt="Match" class="match-image">
+    <button id="nextButton">Next</button>
   </div>
 
-  <audio id="bgMusic" autoplay loop>
-    <source src="mi.mp3" type="audio/mpeg">
-  </audio>
-
-  <script src="script.js"></script>
+  <script>
+    document.getElementById("nextButton").addEventListener("click", function () {
+      // Add your navigation logic here
+      alert("Next button clicked!");
+    });
+  </script>
 </body>
 </html>
